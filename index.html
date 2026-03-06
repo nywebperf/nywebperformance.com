@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NY Web Performance - Link Tree</title>
+    <meta property="og:title" content="NY Web Performance" />
+    <meta
+      property="og:description"
+      content="Better Web for Everyone - Official Links"
+    />
+    <meta property="og:image" content="logo.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
+    <meta property="og:type" content="website" />
+
+    <style>
+      :root {
+        --primary: #0070f3;
+        --background: #ffffff;
+        --text: #000000;
+        --link-bg: #f0f0f0;
+        --link-hover: #e0e0e0;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --primary: #3291ff;
+          --background: #000000;
+          --text: #ffffff;
+          --link-bg: #111111;
+          --link-hover: #222222;
+        }
+      }
+
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        background-color: var(--background);
+        color: var(--text);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 100vh;
+        margin: 0;
+        padding: 2rem 1rem;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 480px;
+        text-align: center;
+      }
+
+      header {
+        margin-bottom: 2rem;
+      }
+
+      .logo {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        object-fit: contain;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        opacity: 0.7;
+        font-size: 0.9rem;
+      }
+      .links {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .link-card {
+        background-color: var(--link-bg);
+        border: 1px solid transparent;
+        border-radius: 8px;
+        padding: 1rem;
+        text-decoration: none;
+        color: var(--text);
+        font-weight: 500;
+        transition: all 0.2s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .link-card:hover {
+        background-color: var(--link-hover);
+        border-color: var(--primary);
+        transform: scale(1.02);
+      }
+
+      footer {
+        margin-top: auto;
+        padding-top: 2rem;
+        font-size: 0.8rem;
+        opacity: 0.5;
+      }
+
+      /* Speed optimization: minimal layout shift and fast paint */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="https://www.meetup.com/Web-Performance-NY/">
+          <img src="logo.webp" alt="NY Web Performance Logo" class="logo" />
+        </a>
+        <h1>NY Web Performance Meetup Group</h1>
+      </header>
+
+      <div class="links">
+        <a
+          href="https://www.meetup.com/Web-Performance-NY/"
+          class="link-card"
+          target="_blank"
+          rel="noopener"
+        >
+          Official Meetup Group
+        </a>
+        <a
+          href="https://www.youtube.com/@NYWebPerformance?sub_confirmation=1"
+          class="link-card"
+          target="_blank"
+          rel="noopener"
+        >
+          Subscribe to our YouTube Channel (Talk Recordings)
+        </a>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSe8aB-He39hMq5ywVxVdFPJCnXU3-a6ifyYSdLp-3aJ7y_eiA/viewform"
+          class="link-card"
+          target="_blank"
+          rel="noopener"
+        >
+          Submit your site for Meet4SPEED
+        </a>
+        <a
+          href="https://www.nywebperformance.org/"
+          class="link-card"
+          target="_blank"
+          rel="noopener"
+        >
+          Our Team & Organizers
+        </a>
+      </div>
+
+      <footer>&copy; 2026 NY Web Performance</footer>
+    </div>
+  </body>
+</html>

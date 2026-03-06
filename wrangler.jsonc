@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "nywebperformance-com",
+  "compatibility_date": "2025-03-05",
+  "assets": {
+    "directory": "."
+  },
+  "routes": [
+    {
+      "pattern": "www.nywebperformance.com",
+      "custom_domain": true
+    }
+  ]
+}
