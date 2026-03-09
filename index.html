@@ -110,6 +110,43 @@
         transform: scale(1.02);
       }
 
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      .social-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: var(--link-bg);
+        border: 1px solid transparent;
+        transition: all 0.2s ease;
+      }
+
+      .social-icon:hover {
+        background-color: var(--link-hover);
+        border-color: var(--primary);
+        transform: scale(1.1);
+      }
+
+      .social-icon img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .social-icon img.invert-dark {
+          filter: invert(1);
+        }
+      }
+
       footer {
         margin-top: auto;
         padding-top: 2rem;
@@ -129,6 +166,36 @@
         <h1>NY UX Speed & Web Performance</h1>
         <h2>Meetup Group</h2>
       </header>
+
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/company/web-performance-ny/"
+          class="social-icon"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn"
+        >
+          <img src="icons/linkedin-icon.png" alt="LinkedIn" />
+        </a>
+        <a
+          href="https://bsky.app/profile/nywebperf.com"
+          class="social-icon"
+          target="_blank"
+          rel="noopener"
+          aria-label="Bluesky"
+        >
+          <img src="icons/bluesky-icon.svg" alt="Bluesky" />
+        </a>
+        <a
+          href="https://www.facebook.com/nywebperf/"
+          class="social-icon"
+          target="_blank"
+          rel="noopener"
+          aria-label="Facebook"
+        >
+          <img src="icons/facebook-icon.png" alt="Facebook" />
+        </a>
+      </div>
 
       <div class="links">
         <a
@@ -154,6 +221,14 @@
           rel="noopener"
         >
           Submit your site for Meet4SPEED
+        </a>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfHyWHSWntTLEu_6pq500PhrrAjyyyVZsH92_eFK-SLMUJD5Q/viewform"
+          class="link-card"
+          target="_blank"
+          rel="noopener"
+        >
+          Speaker Application Form
         </a>
         <a
           href="https://www.nywebperformance.org/"
